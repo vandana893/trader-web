@@ -13,7 +13,7 @@ interface NodeConfigPanelProps {
 export function NodeConfigPanel({ selectedNode, onUpdateNode, onClose }: NodeConfigPanelProps) {
   if (!selectedNode) {
     return (
-      <div style={{ width: '320px', borderLeft: '1px solid var(--color-border)', backgroundColor: 'var(--color-surface)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-text-muted)' }}>
+      <div className="node-config-panel" style={{ width: '320px', borderLeft: '1px solid var(--color-border)', backgroundColor: 'var(--color-surface)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-text-muted)' }}>
         Select a node to configure
       </div>
     );
@@ -125,7 +125,7 @@ export function NodeConfigPanel({ selectedNode, onUpdateNode, onClose }: NodeCon
   };
 
   return (
-    <div style={{
+    <div className="node-config-panel" style={{
       width: '320px',
       borderLeft: '1px solid var(--color-border)',
       backgroundColor: 'var(--color-surface)',

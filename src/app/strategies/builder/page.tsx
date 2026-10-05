@@ -301,7 +301,7 @@ function StrategyBuilderContent() {
         onReset={handleReset}
       />
       
-      <div style={{ display: 'flex', flex: 1, overflow: 'hidden' }}>
+      <div className="builder-main-area" style={{ display: 'flex', flex: 1, overflow: 'hidden' }}>
         <BlockLibrary blocks={mockConfig.blocks as BlockDefinition[]} onAddBlock={handleAddBlock} />
         
         <BuilderCanvas 

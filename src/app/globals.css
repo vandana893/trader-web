@@ -316,5 +316,25 @@ a {
   .page-content {
     padding: var(--spacing-4);
   }
-}
+  /* Strategy Builder Responsive */
+  .builder-main-area {
+    flex-direction: column !important;
+    overflow-y: auto !important;
+  }
+  .block-library-panel, .node-config-panel {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 400px;
+    border-right: none !important;
+    border-left: none !important;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .block-library-panel {
+    flex: none !important;
+  }
+  .node-config-panel {
+    flex: none !important;
+  }
 
+
+}

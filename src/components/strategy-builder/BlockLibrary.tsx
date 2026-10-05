@@ -30,7 +30,7 @@ export function BlockLibrary({ blocks, onAddBlock }: BlockLibraryProps) {
   const categories = Array.from(new Set(blocks.map(b => b.category)));
 
   return (
-    <div style={{
+    <div className="block-library-panel" style={{
       width: '280px',
       borderRight: '1px solid var(--color-border)',
       backgroundColor: 'var(--color-surface)',
