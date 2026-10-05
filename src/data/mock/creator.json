@@ -1,0 +1,203 @@
+{
+  "strategies": [
+    {
+      "id": "STR-001",
+      "name": "Momentum Breakout",
+      "category": "Trend Following",
+      "instruments": ["NIFTY 50", "BANKNIFTY"],
+      "currentVersion": "v1.2",
+      "status": "PUBLISHED",
+      "pricingModel": "Monthly",
+      "price": 999,
+      "currency": "INR",
+      "subscribers": 142,
+      "performanceSummary": "+12.4% (YTD)",
+      "lastUpdated": "2026-09-15T10:00:00Z",
+      "versions": [
+        { "version": "v1.0", "createdAt": "2026-01-10T10:00:00Z", "status": "ARCHIVED", "changeSummary": "Initial Release", "publishedAt": "2026-01-15T10:00:00Z", "subscriberCount": 0 },
+        { "version": "v1.1", "createdAt": "2026-04-10T10:00:00Z", "status": "ARCHIVED", "changeSummary": "Added trailing stop loss", "publishedAt": "2026-04-15T10:00:00Z", "subscriberCount": 12 },
+        { "version": "v1.2", "createdAt": "2026-09-10T10:00:00Z", "status": "PUBLISHED", "changeSummary": "Optimized parameters for high volatility", "publishedAt": "2026-09-15T10:00:00Z", "subscriberCount": 130 }
+      ]
+    },
+    {
+      "id": "STR-008",
+      "name": "Mean Reversion Alpha",
+      "category": "Mean Reversion",
+      "instruments": ["RELIANCE", "TCS"],
+      "currentVersion": "v0.1",
+      "status": "DRAFT",
+      "pricingModel": "One-time",
+      "price": 4999,
+      "currency": "INR",
+      "subscribers": 0,
+      "performanceSummary": "-",
+      "lastUpdated": "2026-10-02T14:30:00Z",
+      "versions": [
+        { "version": "v0.1", "createdAt": "2026-10-02T14:30:00Z", "status": "DRAFT", "changeSummary": "Draft creation", "subscriberCount": 0 }
+      ]
+    },
+    {
+      "id": "STR-009",
+      "name": "Options Scalper Pro",
+      "category": "Options",
+      "instruments": ["BANKNIFTY"],
+      "currentVersion": "v2.0",
+      "status": "PAUSED",
+      "pricingModel": "Monthly",
+      "price": 1499,
+      "currency": "INR",
+      "subscribers": 45,
+      "performanceSummary": "+8.2% (YTD)",
+      "lastUpdated": "2026-08-20T09:15:00Z",
+      "versions": [
+        { "version": "v1.0", "createdAt": "2026-02-10T10:00:00Z", "status": "ARCHIVED", "changeSummary": "Initial Release", "publishedAt": "2026-02-15T10:00:00Z", "subscriberCount": 5 },
+        { "version": "v2.0", "createdAt": "2026-08-10T10:00:00Z", "status": "PUBLISHED", "changeSummary": "Moved to options selling", "publishedAt": "2026-08-20T09:15:00Z", "subscriberCount": 40 }
+      ]
+    }
+  ],
+  "subscribers": [
+    {
+      "subscriberReference": "USR-1024",
+      "strategyId": "STR-001",
+      "strategyName": "Momentum Breakout",
+      "assignedVersion": "v1.2",
+      "publishedVersion": "v1.2",
+      "subscriptionStatus": "ACTIVE",
+      "accessStatus": "ACTIVE",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-31",
+      "plan": "Monthly",
+      "amount": 999,
+      "currency": "INR"
+    },
+    {
+      "subscriberReference": "USR-2048",
+      "strategyId": "STR-001",
+      "strategyName": "Momentum Breakout",
+      "assignedVersion": "v1.1",
+      "publishedVersion": "v1.2",
+      "subscriptionStatus": "ACTIVE",
+      "accessStatus": "ACTIVE",
+      "startDate": "2026-09-15",
+      "endDate": "2026-10-15",
+      "plan": "Monthly",
+      "amount": 999,
+      "currency": "INR"
+    },
+    {
+      "subscriberReference": "USR-3056",
+      "strategyId": "STR-009",
+      "strategyName": "Options Scalper Pro",
+      "assignedVersion": "v2.0",
+      "publishedVersion": "v2.0",
+      "subscriptionStatus": "EXPIRED",
+      "accessStatus": "EXPIRED",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-31",
+      "plan": "Monthly",
+      "amount": 1499,
+      "currency": "INR"
+    }
+  ],
+  "performance": [
+    {
+      "strategyId": "STR-001",
+      "strategyName": "Momentum Breakout",
+      "version": "v1.2",
+      "performanceType": "LIVE_SIMULATION",
+      "totalPnl": 24500,
+      "pnlPercentage": 12.4,
+      "totalTrades": 150,
+      "winningTrades": 95,
+      "losingTrades": 55,
+      "winRate": 63.33,
+      "averageTrade": 163.33,
+      "maxDrawdown": 4.2,
+      "dateRange": "YTD 2026"
+    },
+    {
+      "strategyId": "STR-001",
+      "strategyName": "Momentum Breakout",
+      "version": "v1.2",
+      "performanceType": "BACKTEST",
+      "totalPnl": 125000,
+      "pnlPercentage": 45.0,
+      "totalTrades": 1200,
+      "winningTrades": 780,
+      "losingTrades": 420,
+      "winRate": 65.00,
+      "averageTrade": 104.16,
+      "maxDrawdown": 8.5,
+      "dateRange": "2023 - 2025"
+    }
+  ],
+  "revenue": [
+    {
+      "paymentReference": "PAY-50021",
+      "subscriptionId": "SUB-1001",
+      "subscriberReference": "USR-1024",
+      "strategyId": "STR-001",
+      "strategyName": "Momentum Breakout",
+      "plan": "Monthly",
+      "amount": 999,
+      "currency": "INR",
+      "status": "SUCCESS",
+      "date": "2026-10-01T10:00:00Z"
+    },
+    {
+      "paymentReference": "PAY-50022",
+      "subscriptionId": "SUB-1002",
+      "subscriberReference": "USR-2048",
+      "strategyId": "STR-001",
+      "strategyName": "Momentum Breakout",
+      "plan": "Monthly",
+      "amount": 999,
+      "currency": "INR",
+      "status": "SUCCESS",
+      "date": "2026-09-15T12:30:00Z"
+    },
+    {
+      "paymentReference": "PAY-50023",
+      "subscriptionId": "SUB-1003",
+      "subscriberReference": "USR-4096",
+      "strategyId": "STR-009",
+      "strategyName": "Options Scalper Pro",
+      "plan": "Monthly",
+      "amount": 1499,
+      "currency": "INR",
+      "status": "REFUNDED",
+      "date": "2026-09-05T09:15:00Z"
+    }
+  ],
+  "support": [
+    {
+      "ticketId": "TCK-801",
+      "subject": "Question about trailing stop loss",
+      "strategyId": "STR-001",
+      "strategyName": "Momentum Breakout",
+      "subscriberReference": "USR-1024",
+      "status": "OPEN",
+      "priority": "MEDIUM",
+      "createdAt": "2026-10-04T08:00:00Z",
+      "lastUpdatedAt": "2026-10-04T08:00:00Z",
+      "messages": [
+        { "id": "MSG-1", "sender": "SUBSCRIBER", "content": "Hi, how many points does the trailing stop loss move by default?", "timestamp": "2026-10-04T08:00:00Z" }
+      ]
+    },
+    {
+      "ticketId": "TCK-802",
+      "subject": "Missing trades on v1.1",
+      "strategyId": "STR-001",
+      "strategyName": "Momentum Breakout",
+      "subscriberReference": "USR-2048",
+      "status": "RESOLVED",
+      "priority": "HIGH",
+      "createdAt": "2026-09-20T10:00:00Z",
+      "lastUpdatedAt": "2026-09-21T11:00:00Z",
+      "messages": [
+        { "id": "MSG-1", "sender": "SUBSCRIBER", "content": "The strategy missed a huge rally today.", "timestamp": "2026-09-20T10:00:00Z" },
+        { "id": "MSG-2", "sender": "CREATOR", "content": "Hi, please migrate to v1.2. The v1.1 parameters were optimized for last quarter's conditions.", "timestamp": "2026-09-21T11:00:00Z" }
+      ]
+    }
+  ]
+}

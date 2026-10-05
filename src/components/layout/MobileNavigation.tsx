@@ -1,0 +1,1 @@
+export function MobileNavigation({ children }: any) { return (<div>MobileNavigation {children}</div>); }

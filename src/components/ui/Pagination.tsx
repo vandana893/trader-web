@@ -1,0 +1,1 @@
+export function Pagination({ children }: any) { return (<div>Pagination {children}</div>); }

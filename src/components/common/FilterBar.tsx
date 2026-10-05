@@ -1,0 +1,1 @@
+export function FilterBar({ children }: any) { return (<div>FilterBar {children}</div>); }

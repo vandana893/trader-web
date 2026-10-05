@@ -1,0 +1,38 @@
+[
+  {
+    "id": "evt_1",
+    "deploymentId": "DEP-2026-00124",
+    "timestamp": "2026-10-05T09:15:00Z",
+    "event": "Deployment Started",
+    "instrument": "-",
+    "description": "Live simulation deployment started successfully.",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "evt_2",
+    "deploymentId": "DEP-2026-00124",
+    "timestamp": "2026-10-05T09:15:04Z",
+    "event": "Strategy Signal",
+    "instrument": "NIFTY 50",
+    "description": "MA crossover detected. Signal to BUY 50 qty generated.",
+    "status": "INFO"
+  },
+  {
+    "id": "evt_3",
+    "deploymentId": "DEP-2026-00124",
+    "timestamp": "2026-10-05T09:15:05Z",
+    "event": "Order Filled",
+    "instrument": "NIFTY 50",
+    "description": "BUY 50 @ 24500.50 (Mock Execution)",
+    "status": "SUCCESS"
+  },
+  {
+    "id": "evt_4",
+    "deploymentId": "DEP-2026-00124",
+    "timestamp": "2026-10-05T09:45:00Z",
+    "event": "Risk Warning",
+    "instrument": "-",
+    "description": "Overall exposure approaching 80% limit.",
+    "status": "WARNING"
+  }
+]

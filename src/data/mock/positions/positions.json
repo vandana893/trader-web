@@ -1,0 +1,71 @@
+[
+  {
+    "id": "POS-30012",
+    "strategyId": "s1",
+    "strategyName": "Moving Average Crossover",
+    "deploymentId": "DEP-2026-00124",
+    "instrument": "NIFTY 50",
+    "side": "LONG",
+    "quantity": 50,
+    "averageEntryPrice": 24500.5,
+    "currentPrice": 24525.5,
+    "investedValue": 1225025,
+    "unrealizedPnl": 1250,
+    "realizedPnl": 0,
+    "pnlPercentage": 0.10,
+    "status": "OPEN",
+    "brokerAccountId": "ZER-88192",
+    "executionMode": "LIVE_SIMULATION",
+    "openedAt": "2026-10-05T09:15:05Z",
+    "closedAt": null,
+    "events": [
+      { "type": "Position Opened", "timestamp": "2026-10-05T09:15:05Z", "price": 24500.5, "quantity": 50, "message": "Entry from ORD-10021" }
+    ],
+    "relatedOrderIds": ["ORD-10021"]
+  },
+  {
+    "id": "POS-30013",
+    "strategyId": "s3",
+    "strategyName": "Options Straddle",
+    "deploymentId": "PAPER-101",
+    "instrument": "BANKNIFTY",
+    "side": "LONG",
+    "quantity": 15,
+    "averageEntryPrice": 52010.5,
+    "currentPrice": 52100.0,
+    "investedValue": 780157.5,
+    "unrealizedPnl": 1342.5,
+    "realizedPnl": 0,
+    "pnlPercentage": 0.17,
+    "status": "OPEN",
+    "executionMode": "PAPER",
+    "openedAt": "2026-10-05T10:15:01Z",
+    "closedAt": null,
+    "events": [
+      { "type": "Position Opened", "timestamp": "2026-10-05T10:15:01Z", "price": 52010.5, "quantity": 15, "message": "Entry from ORD-10023" }
+    ],
+    "relatedOrderIds": ["ORD-10023"]
+  },
+  {
+    "id": "POS-30014",
+    "instrument": "TCS",
+    "side": "SHORT",
+    "quantity": 25,
+    "averageEntryPrice": 4100.0,
+    "currentPrice": 4050.0,
+    "exitPrice": 4050.0,
+    "investedValue": 102500,
+    "unrealizedPnl": 0,
+    "realizedPnl": 1250,
+    "pnlPercentage": 1.22,
+    "status": "CLOSED",
+    "executionMode": "PAPER",
+    "openedAt": "2026-10-04T09:30:00Z",
+    "closedAt": "2026-10-04T15:15:00Z",
+    "events": [
+      { "type": "Position Opened", "timestamp": "2026-10-04T09:30:00Z", "price": 4100.0, "quantity": -25 },
+      { "type": "Position Closed", "timestamp": "2026-10-04T15:15:00Z", "price": 4050.0, "quantity": 0 }
+    ],
+    "relatedOrderIds": ["ORD-90001", "ORD-90002"]
+  }
+]

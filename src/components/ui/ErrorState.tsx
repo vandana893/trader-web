@@ -1,0 +1,1 @@
+export function ErrorState({ children }: any) { return (<div>ErrorState {children}</div>); }

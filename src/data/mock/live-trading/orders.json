@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ord_1",
+    "deploymentId": "DEP-2026-00124",
+    "time": "2026-10-05T09:15:05Z",
+    "instrument": "NIFTY 50",
+    "side": "BUY",
+    "type": "MARKET",
+    "qty": 50,
+    "executionPrice": 24500.50,
+    "status": "Filled",
+    "executionMode": "Frontend Simulation"
+  },
+  {
+    "id": "ord_2",
+    "deploymentId": "DEP-2026-00124",
+    "time": "2026-10-05T09:45:10Z",
+    "instrument": "BANKNIFTY",
+    "side": "SELL",
+    "type": "LIMIT",
+    "qty": 15,
+    "requestedPrice": 52100.00,
+    "status": "Pending",
+    "executionMode": "Frontend Simulation"
+  }
+]

@@ -1,0 +1,96 @@
+[
+  {
+    "id": "NOT-001",
+    "type": "ORDER_EXECUTED",
+    "category": "ORDERS",
+    "title": "Order Executed Successfully",
+    "message": "Your MARKET BUY order for 50 qty of NIFTY 50 has been filled at ₹22,452.",
+    "timestamp": "2026-10-05T09:20:00Z",
+    "status": "UNREAD",
+    "actionUrl": "/orders?orderId=ORD-10021",
+    "metadata": {
+      "orderId": "ORD-10021"
+    }
+  },
+  {
+    "id": "NOT-002",
+    "type": "RISK_BREACH",
+    "category": "RISK",
+    "title": "Risk Limit Breached",
+    "message": "Maximum daily loss limit (₹10,000) reached. All active strategies have been paused.",
+    "timestamp": "2026-10-05T09:45:12Z",
+    "status": "UNREAD",
+    "actionUrl": "/reports?type=daily-pnl"
+  },
+  {
+    "id": "NOT-003",
+    "type": "BROKER_DISCONNECTED",
+    "category": "SYSTEM",
+    "title": "Broker Connection Lost",
+    "message": "Connection to broker Upstox lost. Attempting to reconnect automatically.",
+    "timestamp": "2026-10-05T10:05:00Z",
+    "status": "UNREAD",
+    "actionUrl": "/settings",
+    "metadata": {
+      "brokerId": "BRK-UPSTOX"
+    }
+  },
+  {
+    "id": "NOT-004",
+    "type": "ORDER_REJECTED",
+    "category": "ORDERS",
+    "title": "Order Rejected by Broker",
+    "message": "Your LIMIT SELL order for BANKNIFTY was rejected. Reason: Insufficient margin.",
+    "timestamp": "2026-10-04T14:30:00Z",
+    "status": "READ",
+    "actionUrl": "/orders?orderId=ORD-10034",
+    "metadata": {
+      "orderId": "ORD-10034"
+    }
+  },
+  {
+    "id": "NOT-005",
+    "type": "SL_TARGET_HIT",
+    "category": "STRATEGY",
+    "title": "Target Profit Hit",
+    "message": "Strategy 'Momentum Breakout' hit target profit of 5% on Reliance position.",
+    "timestamp": "2026-10-04T12:15:00Z",
+    "status": "READ",
+    "actionUrl": "/positions?strategyId=STR-001",
+    "metadata": {
+      "strategyId": "STR-001"
+    }
+  },
+  {
+    "id": "NOT-006",
+    "type": "PAYMENT_SUCCESS",
+    "category": "PAYMENTS",
+    "title": "Subscription Renewed",
+    "message": "Your subscription for 'Options Scalper Pro' was successfully renewed for ₹1,499.",
+    "timestamp": "2026-10-01T08:00:00Z",
+    "status": "READ",
+    "actionUrl": "/reports?type=subscriptions"
+  },
+  {
+    "id": "NOT-007",
+    "type": "STRATEGY_STOPPED",
+    "category": "STRATEGY",
+    "title": "Strategy Emergency Stopped",
+    "message": "Strategy 'Mean Reversion Alpha' was stopped manually via the kill switch.",
+    "timestamp": "2026-09-30T15:10:00Z",
+    "status": "READ",
+    "actionUrl": "/strategies/STR-008",
+    "metadata": {
+      "strategyId": "STR-008"
+    }
+  },
+  {
+    "id": "NOT-008",
+    "type": "SYSTEM_ALERT",
+    "category": "SYSTEM",
+    "title": "System Maintenance",
+    "message": "Scheduled maintenance this weekend. Trading will not be affected.",
+    "timestamp": "2026-09-28T09:00:00Z",
+    "status": "READ"
+  }
+]

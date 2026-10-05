@@ -1,0 +1,39 @@
+[
+  {
+    "id": "pt_1",
+    "strategyId": "s1",
+    "strategyName": "Moving Average Crossover",
+    "version": "v1.2",
+    "status": "RUNNING",
+    "instruments": [
+      "NIFTY 50",
+      "BANKNIFTY"
+    ],
+    "startedAt": "2026-10-05T09:00:00Z",
+    "initialCapital": 100000,
+    "currentEquity": 106420,
+    "availableBalance": 84650,
+    "totalPnl": 6420,
+    "todayPnl": 1240,
+    "openPositions": 3,
+    "totalTrades": 28
+  },
+  {
+    "id": "pt_2",
+    "strategyId": "s2",
+    "strategyName": "RSI Mean Reversion",
+    "version": "v2.0",
+    "status": "PAUSED",
+    "instruments": [
+      "RELIANCE"
+    ],
+    "startedAt": "2026-10-04T10:30:00Z",
+    "initialCapital": 50000,
+    "currentEquity": 48500,
+    "availableBalance": 48500,
+    "totalPnl": -1500,
+    "todayPnl": 0,
+    "openPositions": 0,
+    "totalTrades": 12
+  }
+]

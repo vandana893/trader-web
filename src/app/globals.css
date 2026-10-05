@@ -1,0 +1,271 @@
+@import "tailwindcss";
+@import '../styles/variables.css';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family-base);
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Base Utility Classes for Layout */
+.app-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: var(--color-background);
+}
+
+.page-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--spacing-6);
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  background-color: #052142; /* Midnight blue (previously Topbar color) */
+  border-right: none;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s ease;
+  z-index: 10;
+}
+
+.sidebar.collapsed {
+  width: 64px;
+}
+
+.sidebar-header {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--spacing-6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.sidebar-logo {
+  font-weight: 800;
+  font-size: var(--font-size-lg);
+  color: white; 
+  white-space: nowrap;
+  overflow: hidden;
+  letter-spacing: 0.5px;
+}
+
+.collapse-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: var(--font-size-xl);
+}
+
+.sidebar-nav {
+  padding: var(--spacing-4) 0;
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-2) var(--spacing-4);
+  margin: 0 var(--spacing-3);
+  color: rgba(255, 255, 255, 0.6);
+  border-radius: 20px; /* Pill shape from reference */
+  transition: all 0.2s ease;
+  font-weight: 500;
+  font-size: var(--font-size-sm);
+  border: 1px solid transparent;
+}
+
+.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.nav-item.active {
+  background: linear-gradient(90deg, rgba(130, 180, 255, 0.1) 0%, rgba(130, 180, 255, 0.02) 100%);
+  color: #a3c7fc; /* Light blue text */
+  border: 1.5px solid rgba(130, 180, 255, 0.5); /* Glowing border */
+  box-shadow: 0 0 15px rgba(130, 180, 255, 0.3), inset 0 0 10px rgba(130, 180, 255, 0.15); /* Outer and inner glow */
+}
+
+.nav-icon {
+  width: 24px;
+  text-align: center;
+  margin-right: var(--spacing-3);
+  font-size: 18px;
+}
+
+.sidebar.collapsed .nav-icon {
+  margin-right: 0;
+}
+
+.sidebar.collapsed .nav-item {
+  margin: 0 var(--spacing-2);
+  justify-content: center;
+}
+
+.nav-label {
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+/* Header Styles */
+.header {
+  height: 72px;
+  background-color: #243c5a; /* Deep ocean blue (previously Sidebar color) */
+  border-bottom: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--spacing-6);
+  z-index: 5;
+}
+
+.header-breadcrumb {
+  font-weight: 600;
+  font-size: var(--font-size-sm);
+  color: white; 
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+}
+
+.header-search-input {
+  padding: var(--spacing-2) var(--spacing-3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.15); /* Light translucent inset */
+  color: white;
+  border-radius: var(--radius-full);
+  outline: none;
+  font-size: var(--font-size-xs);
+  transition: all 0.2s;
+  width: 200px;
+}
+
+.header-search-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.header-search-input:focus {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-color: white;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+}
+
+.header-notification {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* Custom Global Scrollbar (Thin & Themed) */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-text-muted);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-secondary);
+}
+
+/* Hide scrollbar for sidebar specifically for a cleaner look */
+.sidebar-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar-nav {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Bar Chart Animation */
+@keyframes bounceBar {
+  0%, 100% { transform: scaleY(0.8); }
+  50% { transform: scaleY(1.1); }
+}
+
+.animated-bar {
+  transform-origin: bottom;
+  animation: bounceBar 1.5s infinite ease-in-out alternate;
+}
+
+@keyframes spinSlow {
+  from { transform: rotate(-90deg); }
+  to { transform: rotate(270deg); }
+}
+
+.animated-pie {
+  animation: spinSlow 8s linear infinite;
+}
+
+@keyframes floatChart {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.animated-chart {
+  animation: floatChart 4s infinite ease-in-out;
+}
+
+@keyframes pulseArea {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.animated-area {
+  animation: pulseArea 2.5s infinite ease-in-out;
+}

@@ -1,0 +1,57 @@
+{
+  "profile": {
+    "id": "USR-1024",
+    "name": "Arjun Mehta",
+    "email": "arjun.mehta@example.com",
+    "phone": "+91 98765 43210",
+    "kycStatus": "VERIFIED",
+    "joinedDate": "2024-03-15T08:00:00Z"
+  },
+  "brokers": [
+    {
+      "id": "BRK-ACC-01",
+      "brokerCode": "ZERODHA",
+      "brokerName": "Zerodha Kite",
+      "accountRef": "ZP9981",
+      "status": "ACTIVE",
+      "lastSyncAt": "2026-10-05T09:15:00Z"
+    },
+    {
+      "id": "BRK-ACC-02",
+      "brokerCode": "UPSTOX",
+      "brokerName": "Upstox Pro",
+      "accountRef": "100293",
+      "status": "EXPIRED",
+      "lastSyncAt": "2026-10-04T15:30:00Z"
+    }
+  ],
+  "notificationPreferences": {
+    "orderExecuted": { "push": true, "email": false, "sms": false },
+    "orderRejected": { "push": true, "email": true, "sms": true },
+    "riskBreach": { "push": true, "email": true, "sms": true },
+    "promotional": { "push": false, "email": false, "sms": false }
+  },
+  "billing": {
+    "activePlan": "Pro Trader Plan",
+    "nextBillingDate": "2026-11-01T00:00:00Z",
+    "paymentMethod": "Visa ending in 4242",
+    "invoices": [
+      {
+        "id": "INV-2026-10",
+        "date": "2026-10-01T10:00:00Z",
+        "amount": 2999,
+        "currency": "INR",
+        "status": "PAID",
+        "downloadUrl": "#"
+      },
+      {
+        "id": "INV-2026-09",
+        "date": "2026-09-01T10:00:00Z",
+        "amount": 2999,
+        "currency": "INR",
+        "status": "PAID",
+        "downloadUrl": "#"
+      }
+    ]
+  }
+}

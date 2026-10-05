@@ -1,0 +1,98 @@
+{
+  "strategies": [
+    {
+      "id": "strategy-001",
+      "name": "Momentum Swing",
+      "description": "Momentum based multi-condition strategy.",
+      "category": "Momentum",
+      "status": "running",
+      "mode": "paper",
+      "version": "1.2",
+      "instruments": [
+        "NIFTY",
+        "BANKNIFTY"
+      ],
+      "pnl": 12450,
+      "pnlPercent": 8.42,
+      "winRate": 68.4,
+      "totalTrades": 42,
+      "lastUpdated": "2026-10-03T09:15:00",
+      "createdAt": "2026-09-12T10:00:00"
+    },
+    {
+      "id": "strategy-002",
+      "name": "Mean Reversion Bot",
+      "description": "Trades RSI oversold/overbought conditions.",
+      "category": "Mean Reversion",
+      "status": "paused",
+      "mode": "live",
+      "version": "2.0",
+      "instruments": [
+        "RELIANCE",
+        "TCS"
+      ],
+      "pnl": -1500,
+      "pnlPercent": -1.2,
+      "winRate": 45.0,
+      "totalTrades": 112,
+      "lastUpdated": "2026-10-02T14:30:00",
+      "createdAt": "2026-08-01T09:00:00"
+    },
+    {
+      "id": "strategy-003",
+      "name": "Intraday Breakout",
+      "description": "Morning ORB (Opening Range Breakout) strategy.",
+      "category": "Intraday",
+      "status": "stopped",
+      "mode": "paper",
+      "version": "1.0",
+      "instruments": [
+        "NIFTY"
+      ],
+      "pnl": 5400,
+      "pnlPercent": 3.6,
+      "winRate": 55.5,
+      "totalTrades": 28,
+      "lastUpdated": "2026-09-28T15:30:00",
+      "createdAt": "2026-09-15T09:00:00"
+    },
+    {
+      "id": "strategy-004",
+      "name": "Options Straddle",
+      "description": "Short straddle with delta hedging.",
+      "category": "Options",
+      "status": "draft",
+      "mode": "paper",
+      "version": "0.1",
+      "instruments": [
+        "BANKNIFTY"
+      ],
+      "pnl": 0,
+      "pnlPercent": 0,
+      "winRate": 0,
+      "totalTrades": 0,
+      "lastUpdated": "2026-10-03T10:00:00",
+      "createdAt": "2026-10-03T09:45:00"
+    },
+    {
+      "id": "strategy-005",
+      "name": "Trend Following Alpha",
+      "description": "Moving average crossover with ADX confirmation.",
+      "category": "Trend Following",
+      "status": "running",
+      "mode": "live",
+      "version": "3.1",
+      "instruments": [
+        "INFY",
+        "WIPRO",
+        "HCLTECH"
+      ],
+      "pnl": 45200,
+      "pnlPercent": 15.8,
+      "winRate": 72.1,
+      "totalTrades": 315,
+      "lastUpdated": "2026-10-03T11:20:00",
+      "createdAt": "2026-01-10T10:00:00"
+    }
+  ]
+}

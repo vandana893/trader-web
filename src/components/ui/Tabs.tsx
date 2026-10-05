@@ -1,0 +1,1 @@
+export function Tabs({ children }: any) { return (<div>Tabs {children}</div>); }

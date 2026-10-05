@@ -1,0 +1,20 @@
+[
+  {
+    "id": "brk_1",
+    "name": "Zerodha",
+    "accountRef": "ZER-88192",
+    "status": "CONNECTED",
+    "lastSynced": "2026-10-05T10:00:00Z",
+    "availableCapital": 500000,
+    "permissions": ["EQUITY", "F&O", "CURRENCY"]
+  },
+  {
+    "id": "brk_2",
+    "name": "Angel One",
+    "accountRef": "ANG-44512",
+    "status": "DISCONNECTED",
+    "lastSynced": "2026-10-04T15:30:00Z",
+    "availableCapital": 250000,
+    "permissions": ["EQUITY"]
+  }
+]

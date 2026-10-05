@@ -1,0 +1,1 @@
+export function SearchBar({ children }: any) { return (<div>SearchBar {children}</div>); }

@@ -1,0 +1,139 @@
+{
+  "strategies": [
+    {
+      "id": "market-strategy-001",
+      "name": "Momentum Breakout",
+      "description": "A rule-based momentum strategy capturing intraday ORB movements.",
+      "category": "Momentum",
+      "creator": {
+        "id": "creator-001",
+        "name": "Strategy Lab",
+        "avatar": "/images/creators/creator-1.png"
+      },
+      "supportedInstruments": ["NIFTY", "BANKNIFTY"],
+      "riskLevel": "medium",
+      "pricing": {
+        "type": "paid",
+        "amount": 999,
+        "currency": "INR",
+        "period": "monthly"
+      },
+      "version": "2.1",
+      "performance": {
+        "type": "backtest",
+        "returnPercent": 18.4,
+        "winRate": 67.2,
+        "maxDrawdown": 8.5,
+        "totalTrades": 124,
+        "chartData": [
+          {"date": "2026-01", "value": 100},
+          {"date": "2026-02", "value": 105},
+          {"date": "2026-03", "value": 102},
+          {"date": "2026-04", "value": 109},
+          {"date": "2026-05", "value": 115},
+          {"date": "2026-06", "value": 118}
+        ]
+      },
+      "rating": 4.5,
+      "subscribers": 128,
+      "tags": ["Momentum", "Intraday"],
+      "publishedAt": "2026-09-20"
+    },
+    {
+      "id": "market-strategy-002",
+      "name": "Iron Condor Income",
+      "description": "Low-risk options selling strategy focusing on theta decay in range-bound markets.",
+      "category": "Options",
+      "creator": {
+        "id": "creator-002",
+        "name": "Options Alpha",
+        "avatar": ""
+      },
+      "supportedInstruments": ["BANKNIFTY"],
+      "riskLevel": "low",
+      "pricing": {
+        "type": "free"
+      },
+      "version": "1.0",
+      "performance": {
+        "type": "paper",
+        "returnPercent": 6.2,
+        "winRate": 82.5,
+        "maxDrawdown": 3.1,
+        "totalTrades": 45,
+        "chartData": [
+          {"date": "2026-01", "value": 100},
+          {"date": "2026-02", "value": 101},
+          {"date": "2026-03", "value": 103},
+          {"date": "2026-04", "value": 104},
+          {"date": "2026-05", "value": 105},
+          {"date": "2026-06", "value": 106}
+        ]
+      },
+      "rating": 4.8,
+      "subscribers": 842,
+      "tags": ["Options", "Theta", "Swing"],
+      "publishedAt": "2026-08-15"
+    },
+    {
+      "id": "market-strategy-003",
+      "name": "Crypto Trend Follower",
+      "description": "Aggressive trend following system using EMAs and Supertrend.",
+      "category": "Trend",
+      "creator": {
+        "id": "creator-003",
+        "name": "Crypto Wizards",
+        "avatar": ""
+      },
+      "supportedInstruments": ["BTCUSD", "ETHUSD"],
+      "riskLevel": "high",
+      "pricing": {
+        "type": "paid",
+        "amount": 1999,
+        "currency": "INR",
+        "period": "monthly"
+      },
+      "version": "3.5",
+      "performance": {
+        "type": "live",
+        "returnPercent": 42.8,
+        "winRate": 45.1,
+        "maxDrawdown": 18.2,
+        "totalTrades": 312
+      },
+      "rating": 4.2,
+      "subscribers": 56,
+      "tags": ["Crypto", "Trend", "Aggressive"],
+      "publishedAt": "2026-10-01"
+    },
+    {
+      "id": "market-strategy-004",
+      "name": "Mean Reversion Bot",
+      "description": "Fades extreme moves using RSI and Bollinger Bands standard deviation bands.",
+      "category": "Mean Reversion",
+      "creator": {
+        "id": "creator-001",
+        "name": "Strategy Lab",
+        "avatar": "/images/creators/creator-1.png"
+      },
+      "supportedInstruments": ["RELIANCE", "HDFCBANK", "INFY"],
+      "riskLevel": "medium",
+      "pricing": {
+        "type": "free"
+      },
+      "version": "1.2",
+      "performance": {
+        "type": "backtest",
+        "returnPercent": 12.5,
+        "winRate": 58.4,
+        "maxDrawdown": 6.8,
+        "totalTrades": 89
+      },
+      "rating": 3.9,
+      "subscribers": 215,
+      "tags": ["Equities", "Mean Reversion"],
+      "publishedAt": "2026-07-10"
+    }
+  ],
+  "categories": ["Momentum", "Trend", "Options", "Mean Reversion", "Intraday", "Swing"]
+}

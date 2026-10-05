@@ -1,0 +1,96 @@
+[
+  {
+    "id": "ORD-10021",
+    "strategyId": "s1",
+    "strategyName": "Moving Average Crossover",
+    "strategyVersion": "v1.2",
+    "deploymentId": "DEP-2026-00124",
+    "instrument": "NIFTY 50",
+    "exchange": "NSE",
+    "instrumentType": "INDEX OPTIONS",
+    "side": "BUY",
+    "orderType": "MARKET",
+    "quantity": 50,
+    "price": 24500.5,
+    "filledQuantity": 50,
+    "averageFillPrice": 24500.5,
+    "status": "FILLED",
+    "brokerAccountId": "ZER-88192",
+    "executionMode": "LIVE_SIMULATION",
+    "createdAt": "2026-10-05T09:15:00Z",
+    "updatedAt": "2026-10-05T09:15:05Z",
+    "relatedPositionId": "POS-30012",
+    "events": [
+      { "status": "PENDING", "timestamp": "2026-10-05T09:15:00Z", "message": "Order created locally" },
+      { "status": "OPEN", "timestamp": "2026-10-05T09:15:01Z", "message": "Order submitted to mock exchange" },
+      { "status": "FILLED", "timestamp": "2026-10-05T09:15:05Z", "message": "Order completely filled at 24500.5" }
+    ]
+  },
+  {
+    "id": "ORD-10022",
+    "strategyId": "s2",
+    "strategyName": "RSI Mean Reversion",
+    "strategyVersion": "v2.0",
+    "deploymentId": "DEP-2026-00121",
+    "instrument": "RELIANCE",
+    "exchange": "NSE",
+    "instrumentType": "EQUITY",
+    "side": "SELL",
+    "orderType": "LIMIT",
+    "quantity": 100,
+    "price": 2850.0,
+    "filledQuantity": 0,
+    "status": "OPEN",
+    "brokerAccountId": "ZER-88192",
+    "executionMode": "LIVE_SIMULATION",
+    "createdAt": "2026-10-05T10:00:00Z",
+    "updatedAt": "2026-10-05T10:00:02Z",
+    "events": [
+      { "status": "PENDING", "timestamp": "2026-10-05T10:00:00Z" },
+      { "status": "OPEN", "timestamp": "2026-10-05T10:00:02Z" }
+    ]
+  },
+  {
+    "id": "ORD-10023",
+    "strategyId": "s3",
+    "strategyName": "Options Straddle",
+    "deploymentId": "PAPER-101",
+    "instrument": "BANKNIFTY",
+    "exchange": "NSE",
+    "instrumentType": "INDEX OPTIONS",
+    "side": "BUY",
+    "orderType": "MARKET",
+    "quantity": 15,
+    "price": 52000,
+    "filledQuantity": 15,
+    "averageFillPrice": 52010.5,
+    "status": "FILLED",
+    "executionMode": "PAPER",
+    "createdAt": "2026-10-05T10:15:00Z",
+    "updatedAt": "2026-10-05T10:15:01Z",
+    "relatedPositionId": "POS-30013",
+    "events": [
+      { "status": "PENDING", "timestamp": "2026-10-05T10:15:00Z" },
+      { "status": "FILLED", "timestamp": "2026-10-05T10:15:01Z" }
+    ]
+  },
+  {
+    "id": "ORD-10024",
+    "instrument": "INFY",
+    "exchange": "NSE",
+    "side": "BUY",
+    "orderType": "LIMIT",
+    "quantity": 200,
+    "price": 1400.0,
+    "filledQuantity": 0,
+    "status": "CANCELLED",
+    "executionMode": "PAPER",
+    "createdAt": "2026-10-05T11:00:00Z",
+    "updatedAt": "2026-10-05T11:05:00Z",
+    "events": [
+      { "status": "PENDING", "timestamp": "2026-10-05T11:00:00Z" },
+      { "status": "OPEN", "timestamp": "2026-10-05T11:00:02Z" },
+      { "status": "CANCELLED", "timestamp": "2026-10-05T11:05:00Z", "message": "User manually cancelled" }
+    ]
+  }
+]

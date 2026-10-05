@@ -1,0 +1,1 @@
+export function Loader({ children }: any) { return (<div>Loader {children}</div>); }

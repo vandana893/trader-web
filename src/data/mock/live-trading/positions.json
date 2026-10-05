@@ -1,0 +1,15 @@
+[
+  {
+    "id": "pos_1",
+    "deploymentId": "DEP-2026-00124",
+    "instrument": "NIFTY 50",
+    "side": "BUY",
+    "qty": 50,
+    "avgPrice": 24500.50,
+    "currentPrice": 24525.50,
+    "invested": 1225025,
+    "unrealizedPnl": 1250,
+    "pnlPercent": 0.10,
+    "openedAt": "2026-10-05T09:15:05Z"
+  }
+]

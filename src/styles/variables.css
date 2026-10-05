@@ -1,0 +1,76 @@
+:root {
+  /* CashPanel Inspired Color Palette */
+  --color-primary: #638fac; 
+  --color-primary-dark: #4b718c;
+  --color-primary-light: #e6eef5;
+
+  --color-blue: #638fac;
+  --color-blue-dark: #4b718c;
+  --color-blue-light: #8cb1cb;
+  --color-blue-tint: #f0f5f9;
+
+  --color-background: #e8eef6; /* Soft grayish-blue background */
+  --color-surface: #ffffff;
+  --color-surface-tinted: #f9fbff;
+
+  --color-border: #f0f3f8;
+
+  --color-text-primary: #212c3b; /* Dark charcoal/blue-grey */
+  --color-text-secondary: #8192a6; /* Medium blue-grey */
+  --color-text-muted: #b7c4d3;
+
+  --color-success: #20c681;
+  --color-success-bg: #e6faeb;
+
+  --color-warning: #ffb842;
+  --color-warning-bg: #fff8e8;
+
+  --color-danger: #ff6b6b;
+  --color-danger-bg: #ffebeb;
+
+  --color-info: #3b82f6;
+  --color-info-bg: #e4eeff;
+
+  --color-neutral: #8192a6;
+  --color-neutral-bg: #f4f7fb;
+
+  /* Additional Gradients & Accents from Image */
+  --color-accent-pink: #ff8585;
+  --color-accent-orange: #ffb842;
+
+  /* Typography */
+  --font-family-base: "Inter", system-ui, -apple-system, sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 2.5rem;
+
+  /* Spacing */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-10: 2.5rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
+
+  /* Border Radius - Very Rounded and Soft */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.875rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.75rem;
+  --radius-2xl: 2rem;
+  --radius-full: 9999px;
+
+  /* Shadows - Extremely Soft/Floating */
+  --shadow-sm: 0 2px 4px 0 rgba(18, 25, 43, 0.02);
+  --shadow-md: 0 8px 16px -4px rgba(18, 25, 43, 0.04), 0 4px 8px -4px rgba(18, 25, 43, 0.02);
+  --shadow-lg: 0 20px 25px -5px rgba(18, 25, 43, 0.05), 0 10px 10px -5px rgba(18, 25, 43, 0.02);
+}

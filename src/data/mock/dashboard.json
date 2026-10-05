@@ -1,0 +1,49 @@
+{
+  "summary": {
+    "portfolioValue": 44553.00,
+    "todayPnl": 1250.00,
+    "todayPnlPercent": 2.81,
+    "overallPnl": 8240.00,
+    "overallPnlPercent": 8.24,
+    "activeStrategies": 6,
+    "runningStrategies": 4,
+    "pausedStrategies": 2,
+    "openPositions": 12,
+    "profitablePositions": 8,
+    "negativePositions": 4
+  },
+  "performance": {
+    "1D": [10, 20, 15, 30, 25, 40, 35],
+    "1W": [100, 120, 110, 150, 140, 180, 175],
+    "1M": [500, 520, 480, 600, 650, 620, 700],
+    "3M": [1500, 1800, 1700, 2200, 2500, 2400, 2900],
+    "1Y": [5000, 6000, 5500, 7000, 8000, 7800, 8240]
+  },
+  "strategies": [
+    { "id": "strat-1", "name": "Moving Average Crossover", "status": "Running", "todayPnl": 450.00, "mode": "Live", "lastActivity": "10 mins ago" },
+    { "id": "strat-2", "name": "RSI Mean Reversion", "status": "Paused", "todayPnl": -120.50, "mode": "Live", "lastActivity": "2 hours ago" },
+    { "id": "strat-3", "name": "Breakout Momentum", "status": "Running", "todayPnl": 850.25, "mode": "Paper", "lastActivity": "Just now" },
+    { "id": "strat-4", "name": "Volatility Scalp", "status": "Stopped", "todayPnl": 0, "mode": "Paper", "lastActivity": "1 day ago" }
+  ],
+  "positions": [
+    { "id": "pos-1", "instrument": "AAPL", "qty": 50, "avgPrice": 170.50, "currentPrice": 175.20, "pnl": 235.00, "pnlPercent": 2.75 },
+    { "id": "pos-2", "instrument": "TSLA", "qty": 20, "avgPrice": 210.00, "currentPrice": 205.50, "pnl": -90.00, "pnlPercent": -2.14 },
+    { "id": "pos-3", "instrument": "MSFT", "qty": 30, "avgPrice": 405.00, "currentPrice": 412.30, "pnl": 219.00, "pnlPercent": 1.80 }
+  ],
+  "orders": [
+    { "id": "ord-1", "instrument": "AAPL", "type": "MARKET", "side": "BUY", "qty": 50, "price": 170.50, "status": "Executed", "time": "10:15 AM" },
+    { "id": "ord-2", "instrument": "TSLA", "type": "LIMIT", "side": "SELL", "qty": 20, "price": 215.00, "status": "Pending", "time": "09:45 AM" },
+    { "id": "ord-3", "instrument": "NVDA", "type": "STOP", "side": "SELL", "qty": 10, "price": 850.00, "status": "Cancelled", "time": "Yesterday" },
+    { "id": "ord-4", "instrument": "AMD", "type": "MARKET", "side": "BUY", "qty": 100, "price": 175.20, "status": "Rejected", "time": "Yesterday" }
+  ],
+  "brokers": [
+    { "id": "brk-1", "name": "Zerodha", "status": "Connected", "lastSync": "2 mins ago" },
+    { "id": "brk-2", "name": "Upstox", "status": "Connected", "lastSync": "5 mins ago" },
+    { "id": "brk-3", "name": "Dhan", "status": "Disconnected", "lastSync": "1 hour ago" }
+  ],
+  "alerts": [
+    { "id": "alrt-1", "title": "Order Executed", "message": "Bought 50 AAPL @ 170.50", "type": "success", "timestamp": "10:15 AM", "read": false, "link": "/orders" },
+    { "id": "alrt-2", "title": "Strategy Paused", "message": "RSI Mean Reversion hit max drawdown", "type": "warning", "timestamp": "2 hours ago", "read": false, "link": "/strategies" },
+    { "id": "alrt-3", "title": "Broker Disconnected", "message": "Dhan connection lost. Please re-authenticate.", "type": "error", "timestamp": "1 hour ago", "read": true, "link": "/settings" }
+  ]
+}

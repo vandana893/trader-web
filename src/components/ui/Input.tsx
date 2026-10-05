@@ -1,0 +1,1 @@
+export function Input({ children }: any) { return (<div>Input {children}</div>); }

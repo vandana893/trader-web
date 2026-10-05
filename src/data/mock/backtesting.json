@@ -1,0 +1,65 @@
+{
+  "instruments": ["NIFTY 50", "BANK NIFTY", "FINNIFTY", "RELIANCE", "TCS", "HDFCBANK", "INFY", "ITC"],
+  "versions": ["v1.0", "v1.1", "v2.0"],
+  "sampleTrades": [
+    {
+      "id": "trd-001",
+      "tradeNumber": 1,
+      "entryTime": "2026-01-05T09:30:00Z",
+      "exitTime": "2026-01-05T14:15:00Z",
+      "instrument": "BANK NIFTY",
+      "side": "BUY",
+      "quantity": 25,
+      "entryPrice": 45200.50,
+      "exitPrice": 45450.00,
+      "grossPnl": 6237.50,
+      "fees": 124.50,
+      "netPnl": 6113.00,
+      "exitReason": "Target Hit",
+      "strategyVersion": "v2.0"
+    },
+    {
+      "id": "trd-002",
+      "tradeNumber": 2,
+      "entryTime": "2026-01-06T10:15:00Z",
+      "exitTime": "2026-01-06T11:05:00Z",
+      "instrument": "BANK NIFTY",
+      "side": "SELL",
+      "quantity": 25,
+      "entryPrice": 45600.00,
+      "exitPrice": 45680.00,
+      "grossPnl": -2000.00,
+      "fees": 125.00,
+      "netPnl": -2125.00,
+      "exitReason": "Stop Loss",
+      "strategyVersion": "v2.0"
+    },
+    {
+      "id": "trd-003",
+      "tradeNumber": 3,
+      "entryTime": "2026-01-07T13:45:00Z",
+      "exitTime": "2026-01-07T15:15:00Z",
+      "instrument": "NIFTY 50",
+      "side": "BUY",
+      "quantity": 50,
+      "entryPrice": 21300.00,
+      "exitPrice": 21350.00,
+      "grossPnl": 2500.00,
+      "fees": 85.00,
+      "netPnl": 2415.00,
+      "exitReason": "Time Exit",
+      "strategyVersion": "v2.0"
+    }
+  ],
+  "sampleChartData": [
+    {"date": "2026-01-01", "portfolioValue": 100000, "pnl": 0, "drawdown": 0},
+    {"date": "2026-01-15", "portfolioValue": 102500, "pnl": 2500, "drawdown": 0},
+    {"date": "2026-01-31", "portfolioValue": 108000, "pnl": 8000, "drawdown": 0},
+    {"date": "2026-02-15", "portfolioValue": 105000, "pnl": 5000, "drawdown": -2.7},
+    {"date": "2026-02-28", "portfolioValue": 101000, "pnl": 1000, "drawdown": -6.4},
+    {"date": "2026-03-15", "portfolioValue": 109000, "pnl": 9000, "drawdown": 0},
+    {"date": "2026-03-31", "portfolioValue": 115000, "pnl": 15000, "drawdown": 0},
+    {"date": "2026-04-15", "portfolioValue": 113500, "pnl": 13500, "drawdown": -1.3},
+    {"date": "2026-04-30", "portfolioValue": 124580, "pnl": 24580, "drawdown": 0}
+  ]
+}
