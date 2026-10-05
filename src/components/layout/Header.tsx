@@ -1,9 +1,9 @@
 'use client';
 import React, { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
-import { Settings, LogOut, User } from 'lucide-react';
+import { Settings, LogOut, User, Menu } from 'lucide-react';
 
-export function Header() {
+export function Header({ onMenuToggle }: { onMenuToggle?: () => void }) {
   const [profileOpen, setProfileOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -20,8 +20,13 @@ export function Header() {
 
   return (
     <header className="header" style={{ position: 'relative', zIndex: 50 }}>
-      <div className="header-breadcrumb">
-        <span>Dashboard</span>
+      <div className="header-left-mobile" style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+        <button className="mobile-menu-btn" onClick={onMenuToggle} style={{ background: 'none', border: 'none', color: 'white', cursor: 'pointer', display: 'none' }}>
+          <Menu size={24} />
+        </button>
+        <div className="header-breadcrumb">
+          <span>Dashboard</span>
+        </div>
       </div>
       <div className="header-actions">
         <div className="header-search">

@@ -36,15 +36,22 @@ const NAV_ITEMS = [
   { label: 'Settings', href: '/settings', icon: Settings },
 ];
 
-export function Sidebar() {
+export function Sidebar({ mobileMenuOpen, setMobileMenuOpen }: { mobileMenuOpen?: boolean, setMobileMenuOpen?: (v: boolean) => void }) {
   const pathname = usePathname();
   const [collapsed, setCollapsed] = useState(false);
 
   return (
-    <aside className={`sidebar ${collapsed ? 'collapsed' : ''}`}>
+    <aside className={`sidebar ${collapsed ? 'collapsed' : ''} ${mobileMenuOpen ? 'mobile-open' : ''}`}>
       <div className="sidebar-header">
         <div className="sidebar-logo">{collapsed ? 'AL' : 'ALGO PLATFORM'}</div>
-        <button onClick={() => setCollapsed(!collapsed)} className="collapse-btn">
+        {/* On desktop, this is collapse. On mobile, this should close the drawer. */}
+        <button onClick={() => {
+          if (window.innerWidth <= 768 && setMobileMenuOpen) {
+            setMobileMenuOpen(false);
+          } else {
+            setCollapsed(!collapsed);
+          }
+        }} className="collapse-btn">
           {collapsed ? <ChevronRight size={20} /> : <ChevronLeft size={20} />}
         </button>
       </div>
