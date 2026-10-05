@@ -129,11 +129,11 @@ export function BacktestConfigPanel({
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'var(--spacing-4)' }}>
           <div>
             <label style={{ display: 'block', fontSize: 'var(--font-size-sm)', fontWeight: 600, marginBottom: 'var(--spacing-2)' }}>Start Date</label>
-            <Input type="date" value={config.startDate} onChange={(e) => setConfig(prev => ({ ...prev, startDate: e.target.value }))} />
+            <Input type="date" value={config.startDate} onChange={(e: any) => setConfig(prev => ({ ...prev, startDate: e.target.value }))} />
           </div>
           <div>
             <label style={{ display: 'block', fontSize: 'var(--font-size-sm)', fontWeight: 600, marginBottom: 'var(--spacing-2)' }}>End Date</label>
-            <Input type="date" value={config.endDate} onChange={(e) => setConfig(prev => ({ ...prev, endDate: e.target.value }))} />
+            <Input type="date" value={config.endDate} onChange={(e: any) => setConfig(prev => ({ ...prev, endDate: e.target.value }))} />
           </div>
         </div>
 
@@ -141,7 +141,7 @@ export function BacktestConfigPanel({
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'var(--spacing-4)' }}>
           <div>
             <label style={{ display: 'block', fontSize: 'var(--font-size-sm)', fontWeight: 600, marginBottom: 'var(--spacing-2)' }}>Starting Capital (₹)</label>
-            <Input type="number" value={config.startingCapital.toString()} onChange={(e) => setConfig(prev => ({ ...prev, startingCapital: Number(e.target.value) }))} />
+            <Input type="number" value={config.startingCapital.toString()} onChange={(e: any) => setConfig(prev => ({ ...prev, startingCapital: Number(e.target.value) }))} />
           </div>
           <div>
             <label style={{ display: 'block', fontSize: 'var(--font-size-sm)', fontWeight: 600, marginBottom: 'var(--spacing-2)' }}>Position Sizing</label>

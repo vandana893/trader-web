@@ -138,7 +138,7 @@ function DailyPnlTab({ search }: { search: string }) {
         <Button variant="outline" size="sm" onClick={handleExport}><Download size={16} style={{ marginRight: '8px' }} /> Export CSV</Button>
       </div>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 'var(--spacing-4)' }}>
-        <KpiCard title="Total Selected P&L" value={`₹${totalPnl.toLocaleString()}`} theme="strategy" trend={totalPnl >= 0 ? 'up':'down'} />
+        <KpiCard title="Total Selected P&L" value={`₹${totalPnl.toLocaleString()}`} theme="strategy" changeType={totalPnl >= 0 ? 'positive':'negative'} />
         <KpiCard title="Winning Days" value={winDays.toString()} theme="strategy" />
         <KpiCard title="Losing Days" value={(filtered.length - winDays).toString()} theme="strategy" />
       </div>
@@ -199,7 +199,7 @@ function MonthlyPnlTab({ search }: { search: string }) {
         <Button variant="outline" size="sm" onClick={handleExport}><Download size={16} style={{ marginRight: '8px' }} /> Export CSV</Button>
       </div>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 'var(--spacing-4)' }}>
-        <KpiCard title="YTD P&L" value={`₹${totalPnl.toLocaleString()}`} theme="strategy" trend={totalPnl >= 0 ? 'up':'down'} />
+        <KpiCard title="YTD P&L" value={`₹${totalPnl.toLocaleString()}`} theme="strategy" changeType={totalPnl >= 0 ? 'positive':'negative'} />
         <KpiCard title="Avg Win Rate" value={(filtered.reduce((s, r) => s + r.winRate, 0) / (filtered.length || 1)).toFixed(2) + '%'} theme="strategy" />
       </div>
       <Card style={{ padding: 0, overflowX: 'auto' }}>

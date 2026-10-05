@@ -116,7 +116,7 @@ export default function BacktestResultPage() {
                 const heightPercent = ((pt.portfolioValue - minVal) / safeRange) * 100;
                 
                 return (
-                  <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', flex: 1, height: '100%', justifyContent: 'flex-end', position: 'relative', group: 'true' }}>
+                  <div key={i} className="group" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', flex: 1, height: '100%', justifyContent: 'flex-end', position: 'relative' }}>
                     <div style={{ 
                       width: '100%', 
                       height: `${Math.max(5, heightPercent)}%`, 
