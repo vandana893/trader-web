@@ -15,7 +15,7 @@ import { Play, History, Loader2, Info } from 'lucide-react';
 import { BacktestConfigPanel } from '@/components/backtesting/BacktestConfigPanel';
 import { BacktestHistory } from '@/components/backtesting/BacktestHistory';
 
-export default function BacktestingPage() {
+function BacktestingContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const initialStrategyId = searchParams.get('strategyId') || '';
@@ -114,5 +114,13 @@ export default function BacktestingPage() {
 
       </div>
     </div>
+  );
+}
+
+export default function BacktestingPage() {
+  return (
+    <React.Suspense fallback={<div style={{ padding: 'var(--spacing-12)', textAlign: 'center', color: 'var(--color-text-secondary)' }}>Loading Backtesting...</div>}>
+      <BacktestingContent />
+    </React.Suspense>
   );
 }
